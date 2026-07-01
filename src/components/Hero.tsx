@@ -23,7 +23,7 @@ export const Hero = () => {
   }, [mouseX, mouseY]);
 
   return (
-    <section className="relative h-screen w-full flex items-center justify-center bg-background noise-bg overflow-hidden select-none">
+    <section className="relative min-h-screen flex items-center justify-center bg-background noise-bg overflow-hidden select-none">
       
       {/* الإضاءة التفاعلية التي تتبع الماوس */}
       <motion.div 
@@ -60,7 +60,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-7xl md:text-[10rem] font-black leading-none tracking-tighter text-navy"
+            className="text-4xl md:text-[8rem] font-black leading-none tracking-tighter text-navy"
           >
             <span className="inline-block hover:scale-110 transition-transform duration-500 cursor-default">B</span>
             <span className="inline-block hover:scale-110 transition-transform duration-500 cursor-default">R</span>
@@ -75,7 +75,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-7xl md:text-[10rem] font-black leading-none tracking-tighter text-navy"
+            className="text-4xl md:text-[8rem] font-black leading-none tracking-tighter text-navy"
           >
             <span className="inline-block hover:scale-110 transition-transform duration-500 cursor-default">A</span>
             <span className="inline-block hover:scale-110 transition-transform duration-500 cursor-default">C</span>
@@ -97,7 +97,7 @@ export const Hero = () => {
           transition={{ delay: 0.9 }}
           className="mt-16"
         >
-          <Link href="https://britishacademy-ss.com/" className="relative group p-0.5 inline-flex items-center justify-center rounded-full overflow-hidden">
+          <Link href="https://britishacademy-ss.online" className="relative group p-0.5 inline-flex items-center justify-center rounded-full overflow-hidden">
             {/* إطار متحرك (Animated Border) */}
             <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#192c53_0%,#7598fa_50%,#192c53_100%)] group-hover:bg-[conic-gradient(from_90deg_at_50%_50%,#75c0fa_0%,#f0c24d_50%,#75c0fa_100%)] transition-all" />
             
